@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;	
+}
+html {
+	font-family: monospace;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+.game {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	max-width: 30rem;
+	margin: 1rem auto;
+}
+.tile {
+	width: 3rem;
+	height: 3rem;
+	border: 1px solid #eee;
+	line-height: 3rem;
+	text-align: center;
+	font-size: 2rem;
+}
+@media (max-width: 32rem) {
+	.game {
+		max-width: 20rem;
+	}
+	.tile {
+		width: 2rem;
+		height: 2rem;
+		line-height: 2rem;
+		font-size: 1.5rem;
+	}
+}
+.buttons > div {
+	display: flex;
+	justify-content: center;
+}
+button {
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	margin: 1rem;
+	color: black;
+	font-family: inherit;
+	background-color: #eee;
+	border: #ddd;
+}
